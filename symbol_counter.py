@@ -1,7 +1,7 @@
 def main(string):
-    counts = {element: string.count(element) for element in set(string)}
-    for key, value in counts.items():
-        if (value == max(counts.values())):
+    amounts = {element: string.count(element) for element in set(string)}
+    for key, value in amounts.items():
+        if (value == max(amounts.values())):
             return (key, value)
     return 'На вход дана пустая строка'
 
