@@ -6,6 +6,8 @@ def main(string):
         elif symbol == ')':
             if not stack or stack.pop() != '(':
                 return False
+        else:
+            return 'В вводе допустимы лишь символы "(" и ")"'
 
     if stack:
         return False
@@ -13,4 +15,4 @@ def main(string):
 
 
 if __name__ == '__main__':
-    print(main(input()))
+    print(main(input("Введите скобочную последовательность:\n")))
