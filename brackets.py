@@ -1,12 +1,10 @@
 def main(string):
     stack = []
-    for i in string:
-        if i == '(':
-            stack.append(i)
-        elif i == ')':
-            if not stack:
-                return False
-            if stack.pop() != '(':
+    for symbol in string:
+        if symbol == '(':
+            stack.append(symbol)
+        elif symbol == ')':
+            if not stack or stack.pop() != '(':
                 return False
 
     if stack:
