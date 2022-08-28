@@ -7,4 +7,4 @@ def main(string):
 
 
 if __name__ == '__main__':
-    print(main(input().lower()))
+    print(main(input('Введите строку:\n').lower()))
